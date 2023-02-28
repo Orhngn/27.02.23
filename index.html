@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <h1>Merhana JavaScript</h1>
+
+    <h2 class="demo">yaz</h2>
+
+    <input type="text" id="isim">
+    <button onclick="isimleSelamla()">ismi göster</button>
+
+    <script>
+        hos_geldin('Orhun');
+        function hos_geldin(yaz) {
+            console.log(' hoşgeldin : ' + yaz)
+        }
+
+        function hos_geldin1(yaz) {
+            return yaz;
+        }
+
+
+        // function merhabaDe(isim) {
+        //     alert('hello ' + isim);
+        // }
+        // merhabaDe('gökhan');
+
+        function carp(num1, num2) {
+            console.log(' carp : ' + (num1 * num2));
+
+        }
+        carp(7, 9);
+
+
+        function isimleSelamla() {
+            let inputName = document.getElementById('isim').value;
+            alert('hos geldin ' + inputName);
+        }
+
+        // arrow function
+        let toplam = (a, b) => { return a + b };
+        console.log(toplam(25, 32));
+        console.log(toplam('merhaba  ', 'dünya'));
+
+        let value = true;
+        console.log(value);
+        console.log(typeof value);
+        console.log(String(value));
+        console.log(typeof String(value));
+        console.log(Number(value));
+        console.log(typeof Number(value));
+
+
+
+
+    </script>
+
+</body>
+
+</html>

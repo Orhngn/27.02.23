@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects-Arrays</title>
+</head>
+
+<body>
+    <h1>Diziler ve Nesneler</h1>
+
+    <script>
+
+        let arrayRenkler = ['mavi', 'sarı', 'yasil', 'beyaz'];
+        console.log(arrayRenkler.length);
+        console.log(arrayRenkler);
+
+        let arraySayi = [1, 3, 5, 9, 4, 11, 22, 65, 27];
+        console.log(arraySayi);
+        console.log(arraySayi.length);
+        let j = 0;
+
+        while (j < (arraySayi.length)) {
+            if (arraySayi[j] > 11) {
+                console.log(arraySayi[j])
+            }
+            j++;
+        }
+
+        // object
+
+        let personObject = { name: 'ahmet', surname: 'çelik', age: 50 };
+        console.log(personObject);
+        console.log(typeof personObject);
+        console.log(personObject.name);
+        console.log(personObject.age);
+        console.log(personObject.surname);
+
+
+
+    </script>
+
+</body>
+
+</html>

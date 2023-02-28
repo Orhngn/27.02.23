@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Metodları</title>
+</head>
+
+<body>
+    <h1>String Metodları</h1>
+
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <script>
+
+        let str = 'merhaba'; //string
+        str = 'elma,armut,karpuz,armut';
+
+        document.getElementById('demo').innerHTML = str.length;
+
+        // let text = String.fromCharCode(72, 69, 76, 76, 79);
+        // console.log(text);
+        // document.getElementById('demo').innerHTML = str.slice(3, 7); //belirli aralıktaki karakterleri verir
+        // document.getElementById('demo').innerHTML = str.slice(3, 8);
+        let text = 'merhaba';
+        let i = 0;
+        let say = text.length;
+        while (i < say) {
+            console.log(text.slice(i, i + 1));
+            i++;
+        }
+
+        console.log(str.substring(3)); // den sonrasını yazar
+
+        console.log(str.replace('armut', 'ayva')); // yerine yazar
+
+        console.log(str.replaceAll('armut', 'ayva')); // hepsini değiştirir
+
+        let up = 'AhMeT';
+        let low = 'CiGdEm';
+
+        console.log(up.toLocaleUpperCase());
+        console.log(low.toLocaleLowerCase()); //büyülütme ve küçültme 
+
+        let text1 = 'selam';
+        let text2 = 'gençler';
+        console.log(text1 + ' ' + text2);
+        console.log(text1.concat(' ', text2)); //birleştirme işlemi yapar
+
+        let text3 = '   selamlar    orhun';
+        console.log(text3);
+        console.log(text3.trim());
+
+        console.log(str.split());
+
+
+
+
+
+    </script>
+</body>
+
+</html>
